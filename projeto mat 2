@@ -1,0 +1,17 @@
++ pythonimport random
++ import string
++
++ def gerador_senha(tamanho=12):
++     # Junta todas as opçções de caracteres seguros
++     caracteres =m string.ascii_letters + string.digits + string.punctuation
++
++     # Escolhe os caracteres de forma aleatória
++     senha = ''.join(random.chice(caracteres) for _ in range(tamanho))
++
++     return senha
++
++ # Testando o gerador
++ tamanho_desejado = 16
++ senha_segura = gerador_senha(tamanho_desejado)
+=
++ print(f"sua senha segura de(tamanho_desejado) caracteres é: {senha_segura
